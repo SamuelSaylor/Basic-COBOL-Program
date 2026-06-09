@@ -1,0 +1,31 @@
+000001 IDENTIFICATION DIVISION.
+000002     PROGRAM-ID. MAIN.
+000003 DATA DIVISION.
+000004 WORKING-STORAGE SECTION.
+000005
+000006 01  EMPLOYEE-TABLE.
+       05      EMPLOYEE-ENTRY OCCURS 5 TIMES.
+       10          EMPLOYEE-NAME PIC X(20).
+000007 10          HOURS-WORKED PIC 9(3).
+000008 10          HOURLY-RATE PIC 9(3)V99.
+000009 10          GROSS-PAY PIC 9(5)V99.
+       
+       PROCEDURE DIVISION.
+000010     MOVE "joe" TO EMPLOYEE-NAME(1).
+           MOVE "tod" TO EMPLOYEE-NAME(2).
+           MOVE "fred" TO EMPLOYEE-NAME(3).
+           MOVE "zac" TO EMPLOYEE-NAME(4).
+           MOVE "tim" TO EMPLOYEE-NAME(5).
+           
+000011   
+000012
+
+
+
+
+Employee name
+Hours worked
+Hourly rate
+Gross pay
+Tax amount
+Net pay
